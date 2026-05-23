@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatmodel Web</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>chatmodel</h1>
+          <button id="newSessionBtn">+ 新会话</button>
+        </div>
+        <div id="sessionList" class="session-list"></div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <div id="chatTitle">请选择会话</div>
+          <button id="memoryBtn">查看记忆</button>
+        </header>
+        <section id="messages" class="messages"></section>
+        <form id="chatForm" class="chat-input">
+          <textarea id="messageInput" placeholder="输入消息，Enter 发送，Shift+Enter 换行"></textarea>
+          <button type="submit">发送</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
