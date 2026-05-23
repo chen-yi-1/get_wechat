@@ -52,7 +52,6 @@ Desktop.ini
 
 # Compiled files
 *.exe
-!chatlog_alpha.exe
 *.dll
 !lib/windows_x64/wx_key.dll
 *.lib
